@@ -78,12 +78,14 @@ const IndustryWeServe = () => {
   }, []);
 
   return (
-    <section className="px-6 lg:px-8  pb-20">
-      <h2 className="text-4xl font-semibold mb-4 text-center">Industries We Serve</h2>
-       <p className=" max-w-7xl mx-auto text-black mb-16 text-center">
+    <section className=" bg-gray-100/80  py-12 md:py-20">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center px-6 lg:px-8">
+        Industries We Serve
+      </h2>
+      <p className=" max-w-7xl mx-auto text-black mb-8 md:mb-16 text-center px-6 lg:px-8">
         Your Trusted Partner for Comprehensive Boiler Engineering Solutions
       </p>
-      <section className="work-card bg-white text-white">
+      <section className="work-card  text-white px-6 lg:px-8">
         <div className="container max-w-7xl mx-auto ">
           <div className="cards">
             {products.map((product, index) => (
@@ -93,28 +95,28 @@ const IndustryWeServe = () => {
                 className="card-item mb-8 border border-gray-300/60 rounded-lg text-black bg-white  shadow-xl"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
-                  <div className="lg:col-span-5 flex flex-col justify-between p-10 lg:p-20">
+                  <div className="lg:col-span-5 flex flex-col justify-between p-6 md:p-20">
                     <div>
-                      <h5 className="text-4xl font-bold mb-4">
+                      <h5 className="text-3xl md:text-4xl font-bold mb-4">
                         <Link
                           href={"/"}
-                          className="hover:text-[#DC2621] transition-colors text-4xl"
+                          className="hover:text-[#DC2621] transition-colors text-3xl md:text-4xl"
                         >
                           {product.title}
                         </Link>
                       </h5>
-                      <p className=" leading-relaxed">{product.description}</p>
+                      <p className=" text-sm md:text-base md:leading-relaxed">{product.description}</p>
                     </div>
-                    <div className="mt-10">
+                    <div className="mt-4 md:mt-10">
                       <Link
                         href={"/"}
-                        className="tag inline-block py-2 px-4 border border-gray-300/60 bg-black text-white rounded hover:bg-[#DC2621] transition-colors"
+                        className="tag inline-block py-2 px-4 border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors"
                       >
                         View More
                       </Link>
                     </div>
                   </div>
-                  <div className="lg:col-span-7 p-5">
+                  <div className="lg:col-span-7 md:p-5">
                     <div className="relative w-full h-64 lg:h-full rounded-lg">
                       <Image
                         src={product.image}

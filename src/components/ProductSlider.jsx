@@ -16,7 +16,7 @@ import "swiper/css/navigation";
 // --- SLIDER DATA ---
 // Replace with your actual product data
 const products = [
-      {
+  {
     name: "IBR Boiler",
     image: "/assets/products/ibr.webp", // Replace with a different image
   },
@@ -28,15 +28,12 @@ const products = [
 
   {
     name: "Thermic Fluid Heaters [Thermopack]",
-    image:
-      "/assets/products/thermopack.webp",
+    image: "/assets/products/thermopack.webp",
   },
-    {
+  {
     name: "Hot Air Generators",
-    image:
-      "/assets/products/hot-air-generators.webp",
+    image: "/assets/products/hot-air-generators.webp",
   },
-
 ];
 const textVariants = {
   hidden: {
@@ -59,15 +56,17 @@ const ProductSlider = () => {
 
   return (
     // Main container for the slider section
-    <div className="relative w-full  flex flex-col items-center   overflow-hidden pb-20 bg-white px-6 lg:px-8">
-      <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center">Products Categories</h2>
-      <p className=" max-w-7xl mx-auto text-black mb-16 text-center">
+    <div className="relative w-full  flex flex-col items-center   overflow-hidden pb-12 md:pb-20 bg-white px-6 lg:px-8">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center">
+        Products Categories
+      </h2>
+      <p className=" max-w-7xl mx-auto text-black mb-6 md:mb-16 text-center text-sm md:text-base">
         Trusted Boiler Systems for Every Application – Built to Last, Designed
         to Perform
       </p>
       {/* Swiper Component Container */}
 
-      <div className="w-full h-[60vh] max-w-7xl relative mb-4 md:mb-6">
+      <div className="w-full h-[60vh] max-w-7xl relative mb-0 md:mb-6">
         <Swiper
           modules={[Navigation]}
           loop={true}
@@ -87,31 +86,30 @@ const ProductSlider = () => {
               key={product.name}
               className="relative flex items-center justify-center"
             >
-            <div className="">
-  {/* Background Animated Text */}
-  <div className="absolute inset-0 z-0 pointer-events-none">
-    <motion.h1
-      className="text-4xl md:text-6xl lg:text-9xl max-w-6xl mx-auto font-extrabold text-gray-200/80 text-center"
-      variants={textVariants}
-      initial="hidden"
-      animate={activeSlide === index ? "visible" : "hidden"}
-    >
-      {product.name}
-    </motion.h1>
-  </div>
+              <div className="">
+                {/* Background Animated Text */}
+                <div className="absolute inset-0 z-0 pointer-events-none">
+                  <motion.h1
+                    className="text-4xl md:text-6xl lg:text-9xl max-w-6xl mx-auto font-extrabold text-gray-200/80 text-center"
+                    variants={textVariants}
+                    initial="hidden"
+                    animate={activeSlide === index ? "visible" : "hidden"}
+                  >
+                    {product.name}
+                  </motion.h1>
+                </div>
 
-  {/* Product Image Fixed at Bottom */}
-  <div className="relative z-10 w-full flex items-center justify-center pb-8 top-24">
-    <Image
-      src={product.image}
-      alt={product.name}
-      width={800}
-      height={650}
-      className="object-contain md:h-[490px]"
-    />
-  </div>
-</div>
-
+                {/* Product Image Fixed at Bottom */}
+                <div className="relative z-10 w-full flex items-center justify-center md:pb-8 top-24">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={800}
+                    height={650}
+                    className="object-contain md:h-[490px]"
+                  />
+                </div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -119,7 +117,7 @@ const ProductSlider = () => {
 
       {/* Call-to-Action Buttons */}
       <div className=" z-20 flex items-center gap-4">
-        <button className="bg-black text-white py-3 px-8 rounded   font-medium hover:bg-[#DC2621] transition-colors duration-300 md:text-base text-sm">
+        <button className=" py-3 px-8   font-medium border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors  duration-300 md:text-base text-sm">
           View All Products
         </button>
       </div>
@@ -127,11 +125,11 @@ const ProductSlider = () => {
       {/* Custom Navigation Buttons */}
       <div className="absolute top-1/2 -translate-y-1/2 right-4 md:right-8 lg:right-12 z-20 flex flex-col gap-3">
         {/* Next Button */}
-        <button className="swiper-button-next-custom cursor-pointer border border-gray-200/80 bg-[#DC2621] text-white rounded-full w-11 h-11 flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors">
+        <button className="swiper-button-next-custom cursor-pointer border border-gray-200/80 bg-[#DC2621] text-white rounded-full w-11 h-11 flex items-center justify-center shadow-md hover:bg-black transition-colors">
           <BsArrowRight className="text-xl" />
         </button>
         {/* Previous Button */}
-        <button className="swiper-button-prev-custom cursor-pointer bg-[#DC2621] text-white rounded-full border border-gray-200/80 w-11 h-11 flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors">
+        <button className="swiper-button-prev-custom cursor-pointer bg-[#DC2621] text-white rounded-full border border-gray-200/80 w-11 h-11 flex items-center justify-center shadow-md hover:bg-black transition-colors">
           <BsArrowLeft className="text-xl" />
         </button>
       </div>

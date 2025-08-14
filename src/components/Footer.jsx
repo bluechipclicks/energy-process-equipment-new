@@ -11,11 +11,11 @@ const Footer = () => {
       {/* Top Section */}
       <div className="relative">
         <div className="container max-w-7xl mx-auto  ">
-          <div className="w-full flex justify-between items-center pb-14 mb-14 border-b border-white">
-            <h2 className=" text-white text-5xl max-w-3xl leading-16 font-bold">
+          <div className="w-full flex flex-col md:flex-row justify-between md:items-center pb-14 mb-14 border-b border-white">
+            <h2 className=" text-white text-3xl md:text-4xl max-w-3xl md:leading-12 font-bold">
               Powering Industries With <span className="text-[#DC2621]">Durable </span>And <span className="text-[#DC2621]">Efficient</span> Boiler Systems
             </h2>
-            <button className="bg-[#DC2621] text-white py-3 h-fit  px-8 rounded   font-medium  border border-black transition-colors duration-300 md:text-base text-sm">
+            <button className="bg-[#DC2621] text-white py-3 h-fit mt-8 md:mt-0 px-8 rounded   font-medium  border border-black transition-colors duration-300 md:text-base text-sm">
               View All Products
             </button>
           </div>
@@ -163,7 +163,7 @@ const Footer = () => {
       <div className="bg-black  max-w-7xl mx-auto">
         <div className="container mx-auto px-6 lg:px-8 pt-12">
           <p className="text-center text-white text-sm">
-            © Copyright 2024 All rights reserved.
+            © Copyright 2025 All rights reserved.
           </p>
         </div>
       </div>

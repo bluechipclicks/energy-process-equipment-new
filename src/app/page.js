@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import IndustryWeServe from "@/components/IndustryWeServe";
 import NavBar from "@/components/NavBar";
 import ProductSlider from "@/components/ProductSlider";
+import StatsSection from "@/components/StatsSection";
 import React from "react";
 
 function page() {
@@ -19,10 +20,11 @@ function page() {
       <CompanyOverview />
       <ProductSlider />
       <IndustryWeServe/>
+      <StatsSection/>
       <AboutEPE/>
       <Cta/>
        <GlobalPresence/>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
