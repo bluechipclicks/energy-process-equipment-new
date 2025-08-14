@@ -47,12 +47,7 @@ export default function ClientSlider() {
         <h2 className="text-3xl md:text-4xl font-semibold mb-6">We love being your growth partner</h2>
         </div>
         <p className=" text-sm md:text-base text-black">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Exercitationem fugit voluptates earum, atque harum, ratione neque
-          illum fuga omnis commodi repellendus distinctio praesentium dolores
-          quo aspernatur molestias sit at alias ratione neque illum fuga omnis
-          commodi repellendus distinctio praesentium dolores quo aspernatur
-          molestias sit at alias.
+          Among boiler manufacturers and boiler maintenance companies, Energy Process Equipments has established its name for innovation. Through a commitment to research and development and a sound adaptable strategy, today the company is involved into the creation of IBR, Thermic Fluid Heating Systems, Hot Air Generators, DM Plants, IBR Boiler Repairs among others.
         </p>
       </div>
     </section>
