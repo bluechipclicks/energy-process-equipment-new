@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+body {
+  font-family: inherit;
+}
+/* Apply the animation */
+.animate-slide {
+  animation: slide 50s linear infinite;
+}
+.group:hover .animate-slide {
+  animation-play-state: paused;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.text-outline {
+  color: transparent; /* Make the text fill transparent */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width for WebKit browsers */
+  -webkit-text-stroke-color: white; /* Set the stroke color */
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes scroll-y {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+.animate-scroll-y {
+  animation: scroll-y 30s linear infinite;
 }
