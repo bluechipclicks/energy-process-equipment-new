@@ -14,17 +14,15 @@ import React from "react";
 function page() {
   return (
     <>
-      <NavBar />
       <Hero />
       <ClientSlider />
       <CompanyOverview />
       <ProductSlider />
-      <IndustryWeServe/>
-      <StatsSection/>
-      <AboutEPE/>
-      <Cta/>
-       <GlobalPresence/>
-      <Footer />
+      <IndustryWeServe />
+      <StatsSection />
+      <AboutEPE />
+      <Cta />
+      <GlobalPresence />
     </>
   );
 }

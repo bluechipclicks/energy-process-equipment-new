@@ -40,7 +40,7 @@ const StatsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="bg-white p-8 rounded text-center shadow-md border-gray-300/60 border">
+            <div key={index} className="bg-white p-8 rounded-lg text-center shadow-md border-b-4 border-b-[#DC2621] border-t border-t-gray-200/40">
               <p className="text-3xl md:text-4xl  font-bold text-[#DC2621]">
                 {stat.value}
               </p>

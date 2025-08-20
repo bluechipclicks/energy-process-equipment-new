@@ -9,8 +9,8 @@ import { FiMenu, FiX } from 'react-icons/fi';
 // Navigation links data for easier mapping
 const navLinks = {
   left: [
-    { href: '/home', label: 'Home' },
-    { href: '/about', label: 'About' },
+    { href: '/', label: 'Home' },
+    { href: '/about-us', label: 'About' },
     { href: '/portfolio', label: 'Products' },
     { href: '/blog', label: 'Infrastructure' },
     { href: '/contact', label: 'Our Clients' },

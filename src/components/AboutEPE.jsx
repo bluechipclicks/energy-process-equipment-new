@@ -38,7 +38,7 @@ const AboutEPE = () => {
         {/* --- Cards Grid Section --- */}
         <div className="mt-6 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {aboutData.map((item, index) => (
-            <div key={index} className="border border-gray-200 rounded overflow-hidden flex flex-col shadow-md ">
+            <div key={index} className=" border-b-4 border-b-red-600 rounded-lg overflow-hidden flex flex-col shadow-md ">
               <div className="relative h-64 w-full">
                 {/* Overlay for the black and white effect and text */}
 

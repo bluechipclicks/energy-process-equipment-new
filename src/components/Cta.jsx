@@ -7,7 +7,7 @@ const Cta = () => {
         <h2 className="text-4xl font-medium mb-10 text-center text-white">
           Ready to upgrade your boiler system?
         </h2>
-        <button className="bg-black text-white py-3 px-8 rounded  border-white border  font-medium hover:bg-[#DC2621] hover:border-[#DC2621] transition-colors duration-300 md:text-base text-sm">
+        <button className="bg-[#DC2621] text-white py-3 h-fit mt-8 md:mt-0 px-8 rounded hover:bg-transparent hover:border-white   font-medium  border border-black transition-colors duration-300 md:text-base text-sm">
           Get Team Assistance
         </button>
       </div>
