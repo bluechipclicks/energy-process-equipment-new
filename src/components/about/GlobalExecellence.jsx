@@ -49,7 +49,7 @@ const features = [
 const GlobalExecellence = () => {
   return (
     <>
-      <div className="bg-black py-10  px-6 lg:px-8 ">
+      <div className="bg-black py-20   px-6 lg:px-8 ">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8">
           {stats.map((stat, index) => (
             <div
@@ -62,7 +62,7 @@ const GlobalExecellence = () => {
             >
               <div>{stat.icon}</div>
               <div>
-                <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-left">
                   {stat.value}
                 </p>
                 <p className="text-white mt-2 tracking-widest text-sm md:text-base">{stat.label}</p>
@@ -72,7 +72,7 @@ const GlobalExecellence = () => {
         </div>
       </div>
       <section className="bg-white">
-        <div className="container mx-auto px-6 lg:px-8 py-12 md:py-20">
+        <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-12 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text Content Section - Updated with EPE's information */}
             <div className="space-y-6">
@@ -107,7 +107,7 @@ const GlobalExecellence = () => {
               </div>
             </div>
             {/* Image Collage Section - alt text updated for relevance */}
-            <div className="relative md:min-h-[550px] ">
+            <div className="relative ">
               <Image
                 src="/assets/about/global-excellence.webp"
                 alt="Expert engineer at Energy Process Equipments manufacturing facility"

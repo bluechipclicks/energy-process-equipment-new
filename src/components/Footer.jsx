@@ -53,24 +53,24 @@ const Footer = () => {
               </div>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="text-white transition-colors">
+                  <Link href="/about-us" className="text-white transition-colors">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white transition-colors">
+                  <Link href="#" className="text-white transition-colors">
                     Infrastructure
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white transition-colors">
+                  <Link href="/our-clients" className="text-white transition-colors">
                     Our Clients
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white transition-colors">
+                  <Link href="#" className="text-white transition-colors">
                     Industrires We Serve
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -89,24 +89,24 @@ const Footer = () => {
 
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="text-white transition-colors">
+                  <Link href="#" className="text-white transition-colors">
                     IBR Boiler
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white transition-colors">
+                  <Link href="#" className="text-white transition-colors">
                     Small Industrial Boiler [SIB]
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white transition-colors">
-                    Small Industrial Boiler [SIB]
-                  </a>
+                  <Link href="#" className="text-white transition-colors">
+                   Thermic Fluid Heaters [Thermopack]
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-white transition-colors">
+                  <Link href="#" className="text-white transition-colors">
                     Hot Air Generators
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
