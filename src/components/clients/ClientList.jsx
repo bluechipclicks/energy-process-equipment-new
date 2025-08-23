@@ -187,7 +187,7 @@ const ClientList = () => {
               </div>
               {/* Main content area for the company name (acts as logo) */}
               <div className="flex-grow flex items-center justify-center p-10 min-h-[180px]">
-                <h3 className="text-center text-3xl md:text-2xl font-semibold ">
+                <h3 className="text-center text-xl md:text-2xl font-semibold ">
                   {client.company}
                 </h3>
               </div>
@@ -240,7 +240,7 @@ const ClientList = () => {
               </div>
               {/* Main content area for the company name (acts as logo) */}
               <div className="flex-grow flex items-center justify-center p-10 min-h-[180px]">
-                <h3 className="text-center text-3xl md:text-2xl font-semibold ">
+                <h3 className="text-center text-xl md:text-2xl font-semibold ">
                   {client.company}
                 </h3>
               </div>

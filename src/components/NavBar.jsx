@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 // Import your new product data
 import { productCategories, otherProducts } from "@/app/data/products";
@@ -19,14 +19,13 @@ const navLinks = [
     label: "Other Products",
     subLinks: otherProducts, // Use imported data
   },
-    { href: "/contact-us", label: "Contact Us" },
-
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 const NavBar = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState("");
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,12 +39,32 @@ const NavBar = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="w-full py-5 bg-white shadow-sm fixed z-30">
+    <header
+      className={`w-full py-5 fixed z-30 transition-colors duration-300 ${
+        hasScrolled ? "bg-white shadow-sm" : "bg-transparent"
+      }`}
+    >
       <nav className="flex items-center justify-between px-6 lg:px-8 gap-4">
         {/* Logo */}
         <div className="flex flex-col items-center filter drop-shadow-[3px_3px_3px_rgba(0,0,0,0.1)]">
-          <Link href="/" className="font-logo text-6xl text-gray-800">
+          <Link href="/" className="font-logo text-6xl">
             <Image
               src="/assets/epe.png"
               alt="Energy Process Equipments (EPE)"
@@ -62,11 +81,22 @@ const NavBar = () => {
             <li key={link.label} className="relative group">
               {link.subLinks ? (
                 <>
-                  <Link href={"/all-products"} className="flex items-center cursor-pointer">
-                    <span className="font-medium uppercase tracking-wider text-black group-hover:text-[#DC2621] transition-colors duration-300">
+                  <Link
+                    href={"/all-products"}
+                    className="flex items-center cursor-pointer"
+                  >
+                    <span
+                      className={`font-medium uppercase tracking-wider group-hover:text-[#DC2621] transition-colors duration-300 ${
+                        hasScrolled ? "text-black" : "text-white"
+                      }`}
+                    >
                       {link.label}
                     </span>
-                    <FiChevronDown className="ml-1 h-4 w-4 text-black transition-colors duration-300 group-hover:text-[#DC2621]" />
+                    <FiChevronDown
+                      className={`ml-1 h-4 w-4 transition-colors duration-300 group-hover:text-[#DC2621] ${
+                        hasScrolled ? "text-black" : "text-white"
+                      }`}
+                    />
                   </Link>
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-max opacity-0 group-hover:opacity-100 transition-all duration-300 invisible group-hover:visible z-40">
                     <div className="bg-white shadow-lg rounded-md">
@@ -88,7 +118,9 @@ const NavBar = () => {
               ) : (
                 <Link
                   href={link.href}
-                  className="font-medium uppercase tracking-wider text-black hover:text-[#DC2621] transition-colors duration-300"
+                  className={`font-medium uppercase tracking-wider hover:text-[#DC2621] transition-colors duration-300 ${
+                    hasScrolled ? "text-black" : "text-white"
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -97,10 +129,14 @@ const NavBar = () => {
           ))}
         </ul>
 
-        {/* Burger Icon & Mobile Menu... (Keep this part the same) */}
+        {/* Burger Icon & Mobile Menu... */}
         <div className="lg:hidden">
           <button onClick={toggleMenu}>
-            <FiMenu className="h-6 w-6 text-black mt-4" />
+            <FiMenu
+              className={`h-6 w-6 mt-4 ${
+                hasScrolled ? "text-black" : "text-[#DC2621]"
+              }`}
+            />
           </button>
         </div>
         <div
@@ -113,7 +149,7 @@ const NavBar = () => {
               <FiX className="h-8 w-8 text-white bg-[#DC2621] rounded-full p-2" />
             </button>
           </div>
-          <ul className="flex flex-col gap-4 mt-8 px-6">
+          <ul className="flex flex-col gap-4 mt-4 md:mt-8 px-6">
             {navLinks.map((link) => (
               <li key={link.label}>
                 {link.subLinks ? (
@@ -122,7 +158,7 @@ const NavBar = () => {
                       className="flex items-center justify-between cursor-pointer"
                       onClick={() => handleDropdown(link.label)}
                     >
-                      <span className="font-light uppercase tracking-wider text-gray-600 hover:text-black transition-colors duration-300">
+                      <span className="font-medium uppercase tracking-wider text-gray-600 hover:text-black transition-colors duration-300">
                         {link.label}
                       </span>
                       <FiChevronDown
@@ -137,7 +173,7 @@ const NavBar = () => {
                           <li key={subLink.label} className="py-2">
                             <Link
                               href={subLink.href}
-                              className="font-light tracking-wider text-gray-600 hover:text-black transition-colors duration-300"
+                              className="font-medium tracking-wider text-gray-600 hover:text-black transition-colors duration-300"
                               onClick={toggleMenu}
                             >
                               {subLink.label}
@@ -150,7 +186,7 @@ const NavBar = () => {
                 ) : (
                   <Link
                     href={link.href}
-                    className="font-light uppercase tracking-wider text-gray-600 hover:text-black transition-colors duration-300"
+                    className="font-medium uppercase tracking-wider text-gray-600 hover:text-black transition-colors duration-300"
                     onClick={toggleMenu}
                   >
                     {link.label}

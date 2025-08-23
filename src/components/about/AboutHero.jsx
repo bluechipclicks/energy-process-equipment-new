@@ -5,13 +5,13 @@ const AboutHero = () => {
   return (
     <>
       {/* Main container for the page with a light gray background */}
-      <div className="h-[650px] bg-black/80 bg-cover bg-center" style={{backgroundImage:"url(/assets/about-us.webp)"}}></div>
-      <div className="py-16 sm:py-20">
+      <div className="h-[400px] md:h-[650px] bg-black/80 bg-cover bg-center" style={{backgroundImage:"url(/assets/about-us.webp)"}}></div>
+      <div className="py-12 sm:py-20">
         <div className=" w-full px-6 lg:px-8">
-          <h1 className="text-6xl md:text-9xl tracking-wider font-semibold">
+          <h1 className="text-5xl md:text-9xl tracking-wider font-semibold">
             ABOUT US
           </h1>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8 md:mt-8">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-4 md:mt-8">
             {/* Column 1 */}
             <div className="w-full md:w-[30%]">
               <div className="  space-y-4">
