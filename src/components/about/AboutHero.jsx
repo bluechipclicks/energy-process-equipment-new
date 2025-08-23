@@ -5,7 +5,7 @@ const AboutHero = () => {
   return (
     <>
       {/* Main container for the page with a light gray background */}
-      <div className="h-screen bg-black/80"></div>
+      <div className="h-[650px] bg-black/80 bg-cover bg-center" style={{backgroundImage:"url(/assets/about-us.webp)"}}></div>
       <div className="py-16 sm:py-20">
         <div className=" w-full px-6 lg:px-8">
           <h1 className="text-6xl md:text-9xl tracking-wider font-semibold">

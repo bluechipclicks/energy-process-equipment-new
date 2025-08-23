@@ -12,18 +12,19 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About" },
   {
-    label: "Product Categories",
+    label: "Categories",
     subLinks: productCategories, // Use imported data
   },
   {
     label: "Other Products",
     subLinks: otherProducts, // Use imported data
   },
+    { href: "/contact-us", label: "Contact Us" },
+
 ];
 
 const NavBar = () => {
-  // ... the rest of your NavBar component code remains exactly the same as the previous version.
-  // No changes are needed in the logic, only in the data source above.
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState("");
 
@@ -50,7 +51,7 @@ const NavBar = () => {
               alt="Energy Process Equipments (EPE)"
               height={120}
               width={360}
-              className="h-10 md:h-14 w-auto"
+              className="h-10 md:h-12 w-auto"
             />
           </Link>
         </div>
@@ -61,12 +62,12 @@ const NavBar = () => {
             <li key={link.label} className="relative group">
               {link.subLinks ? (
                 <>
-                  <div className="flex items-center cursor-pointer">
+                  <Link href={"/all-products"} className="flex items-center cursor-pointer">
                     <span className="font-medium uppercase tracking-wider text-black group-hover:text-[#DC2621] transition-colors duration-300">
                       {link.label}
                     </span>
                     <FiChevronDown className="ml-1 h-4 w-4 text-black transition-colors duration-300 group-hover:text-[#DC2621]" />
-                  </div>
+                  </Link>
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-max opacity-0 group-hover:opacity-100 transition-all duration-300 invisible group-hover:visible z-40">
                     <div className="bg-white shadow-lg rounded-md">
                       <ul className="py-1">
@@ -95,7 +96,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        
+
         {/* Burger Icon & Mobile Menu... (Keep this part the same) */}
         <div className="lg:hidden">
           <button onClick={toggleMenu}>

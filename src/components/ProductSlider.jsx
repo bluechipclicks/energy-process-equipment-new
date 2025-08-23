@@ -12,6 +12,7 @@ import { BsArrowRight } from "react-icons/bs";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 // --- SLIDER DATA ---
 // Replace with your actual product data
@@ -117,9 +118,9 @@ const ProductSlider = () => {
 
       {/* Call-to-Action Buttons */}
       <div className=" z-20 flex items-center gap-4">
-        <button className=" py-3 px-8   font-medium border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors  duration-300 md:text-base text-sm">
+        <Link href={"/all-products"} className=" py-3 px-8   font-medium border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors  duration-300 md:text-base text-sm">
           View All Products
-        </button>
+        </Link>
       </div>
 
       {/* Custom Navigation Buttons */}

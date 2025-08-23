@@ -1,26 +1,28 @@
+import Link from "next/link";
+
 // components/BackgroundVideoSection.tsx
 export default function BackgroundVideoSection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section
+      className="relative h-screen w-full overflow-hidden  bg-cover bg-center"
+      style={{ backgroundImage: "url(/assets/home-bg.webp)" }}
+    >
       {/* Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/hero-bg.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
 
       {/* Black Overlay */}
-      <div className="absolute inset-0 bg-black/70 z-10"></div>
 
       {/* Centered Text Content */}
-      <div className="relative z-20 h-full flex items-center px-6 lg:px-8 ">
-        <h1 className="text-white text-3xl md:text-7xl font-bold leading-tight max-w-4xl mt-8">
-          High Temperature Thermal Oil Heaters, Steam Boilers,<br />
-           <span className="text-[#DC2621]"> Hot Water </span> and Hot Air Generators
+      <div className="relative z-20 h-full  px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <h1 className="text-white text-3xl md:text-6xl font-semibold  mt-44 mb-6">
+          Engineering Boilers With Excellence
         </h1>
+        <p className="text-white text-2xl max-w-3xl mx-auto text-center mb-8">
+          Delivering innovative, reliable, and long-lasting boiler solutions
+          backed by expertise, dedication, and trusted service.
+        </p>
+         <Link href={"/contact-us"} className=" py-3 px-8 w-fit text-base  font-medium border hover:border-white hover:bg-transparent border-white text-black hover:text-white rounded bg-white transition-colors  duration-300 md:text-lg">
+          Connect With Us
+        </Link>
       </div>
     </section>
   );

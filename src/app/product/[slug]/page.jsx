@@ -22,8 +22,8 @@ const ProductPage = async ({ params }) => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <main className="pt-32 pb-16">
-        <div className="container mx-auto px-6">
+      <main className="pt-32 pb-6 md:pb-16">
+        <div className="container max-w-7xl mx-auto px-6 md:px-8">
           {/* Page Header */}
           <div className="text-center mb-6 md:mb-12">
             <h1 className="text-3xl md:text-7xl font-bold text-black">

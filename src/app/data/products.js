@@ -364,7 +364,7 @@ export const otherProducts = [
       "Advanced incinerators for safe and eco-friendly disposal of solid, liquid, and hazardous waste.",
     productData: [
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/incinerator.webp",
 
         title: "Incinerator",
         productDescription:
@@ -378,7 +378,7 @@ export const otherProducts = [
         ],
       },
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/incinerator-vertical-gas-fired.webp",
 
         title: "Incinerator Vertical Gas Fired",
         productDescription:
@@ -392,7 +392,7 @@ export const otherProducts = [
         ],
       },
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/incinerator-liquid-waste.webp",
 
         title: "Incinerator Liquid Waste",
         productDescription:
@@ -406,7 +406,7 @@ export const otherProducts = [
         ],
       },
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/incinerator-tarry-waste.webp",
 
         title: "Incinerator Tarry Waste",
         productDescription:

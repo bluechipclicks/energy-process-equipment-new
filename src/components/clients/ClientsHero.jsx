@@ -2,7 +2,9 @@ import React from 'react'
 
 const ClientsHero = () => {
   return (
-     <div className="h-screen bg-black/80"></div>
+     <div className="h-[650px] bg-black/80 bg-cover bg-center" style={{backgroundImage:"url(/assets/clients-bg.webp)"}}>
+
+     </div>
   )
 }
 

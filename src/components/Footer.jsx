@@ -58,7 +58,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white transition-colors">
+                  <Link href="/infrastructure" className="text-white transition-colors">
                     Infrastructure
                   </Link>
                 </li>
@@ -68,8 +68,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white transition-colors">
-                    Industrires We Serve
+                  <Link href="/contact-us" className="text-white transition-colors">
+                  Contact Us
                   </Link>
                 </li>
               </ul>

@@ -112,7 +112,7 @@ const IndustryWeServe = () => {
                         href={"/"}
                         className="tag inline-block py-2 px-4 border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors"
                       >
-                        View More
+                        Know More
                       </Link>
                     </div>
                   </div>
