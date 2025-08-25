@@ -8,7 +8,7 @@ export default function CompanyOverview() {
         <h2 className="text-3xl md:text-4xl font-semibold mb-12 md:mb-16">
           Leading Boiler Manufacturing & Services Company
         </h2>
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-12">
           <div>
             <div className="flex justify-center mb-4">
               <div className="border border-white rounded-full p-4 items-center flex justify-center bg-[#DC2621]">

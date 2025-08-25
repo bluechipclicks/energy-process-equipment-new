@@ -1,15 +1,18 @@
 // components/IndustryWeServe.js
 "use client"; // Add this line for Next.js 13+ App Router
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
+import ContactModal from "./contact/ContactModal";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const IndustryWeServe = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const products = [
     {
       title: "Automotive and Engineering Industry",
@@ -97,23 +100,20 @@ const IndustryWeServe = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                   <div className="lg:col-span-5 flex flex-col justify-between p-6 md:p-20">
                     <div>
-                      <h5 className="text-3xl md:text-4xl font-bold mb-4">
-                        <Link
-                          href={"/"}
-                          className="hover:text-[#DC2621] transition-colors text-3xl md:text-4xl"
-                        >
-                          {product.title}
-                        </Link>
+                      <h5 className="text-3xl md:text-4xl font-bold mb-4 hover:text-[#DC2621] transition-colors">
+                        {product.title}
                       </h5>
-                      <p className=" text-sm md:text-base md:leading-relaxed">{product.description}</p>
+                      <p className=" text-sm md:text-base md:leading-relaxed">
+                        {product.description}
+                      </p>
                     </div>
                     <div className="mt-4 md:mt-10">
-                      <Link
-                        href={"/"}
+                      <button
+                        onClick={() => setIsModalOpen(true)}
                         className="tag inline-block py-2 px-4 border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors"
                       >
                         Know More
-                      </Link>
+                      </button>
                     </div>
                   </div>
                   <div className="lg:col-span-7 md:p-5">
@@ -131,6 +131,12 @@ const IndustryWeServe = () => {
             ))}
           </div>
         </div>
+        {isModalOpen && (
+          <ContactModal
+            isModalOpen={isModalOpen}
+            setIsModalOpen={setIsModalOpen}
+          />
+        )}
       </section>
     </section>
   );

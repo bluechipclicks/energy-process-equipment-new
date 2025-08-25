@@ -13,11 +13,11 @@ const Footer = () => {
         <div className="container max-w-7xl mx-auto  ">
           <div className="w-full flex flex-col md:flex-row justify-between md:items-center pb-14 mb-14 border-b border-white">
             <h2 className=" text-white text-3xl md:text-4xl max-w-3xl md:leading-12 font-bold">
-              Powering Industries With <span className="text-[#DC2621]">Durable </span>And <span className="text-[#DC2621]">Efficient</span> Boiler Systems
+              Powering Industries With <span className="text-white">Durable </span>And <span className="text-white">Efficient</span> Boiler Systems
             </h2>
-            <button className="bg-[#DC2621] text-white py-3 h-fit mt-8 md:mt-0 px-8 rounded hover:bg-transparent hover:border-white   font-medium  border border-black transition-colors duration-300 md:text-base text-sm">
+            <Link href={"/all-products"} className="bg-[#DC2621] text-white py-3 h-fit mt-8 md:mt-0 px-8 rounded hover:bg-transparent hover:border-white   font-medium  border border-black transition-colors duration-300 md:text-base text-sm">
               View All Products
-            </button>
+            </Link>
           </div>
           <div className="grid gap-4 md:gap-12 sm:grid-cols-2 lg:grid-cols-4">
             {/* Column 1: Brand and Description */}
@@ -153,9 +153,9 @@ const Footer = () => {
 
         {/* Schedule Button (Orange background) */}
         <div className="bg-[#DC2621] text-white flex items-center justify-center p-4 md:p-8 w-full lg:w-1/4">
-          <button className="font-bold text-lg hover:opacity-90 transition-opacity">
-          Inquiry Now 
-          </button>
+          <Link href={"/contact-us"} className="font-bold text-lg lg:text-xl hover:opacity-90 transition-opacity">
+          Let&apos;s Connect
+          </Link>
         </div>
       </div>
 

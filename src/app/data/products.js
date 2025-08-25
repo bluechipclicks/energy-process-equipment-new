@@ -430,7 +430,7 @@ export const otherProducts = [
       "Reliable dust collection and filtration systems for clean air, compliance, and improved working environments.",
     productData: [
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/simplex-cyclone-seperator.webp",
 
         title: "Dust Collectors - Simplex Cyclone Seperator",
         productDescription:
@@ -445,7 +445,7 @@ export const otherProducts = [
         brochure: "/",
       },
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/multi-cyclone-seperator.webp",
 
         title: "Dust Collectors - Multi Cyclone Seperator",
         productDescription:
@@ -460,7 +460,7 @@ export const otherProducts = [
         brochure: "/",
       },
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/bag-filter.webp",
 
         title: "Bag Filter",
         productDescription:
@@ -485,7 +485,7 @@ export const otherProducts = [
       "Efficient dowtherm evaporators designed for heating, evaporation, and energy-efficient reboiling processes.",
     productData: [
       {
-        imgSrc: "/assets/products/solid-fuel-fired-package-steam-boiler.webp",
+        imgSrc: "/assets/products/dowtherm-evaporator.webp",
 
         featuresData: [
           "High heat transfer efficiency",

@@ -61,13 +61,13 @@ const ProductSlider = () => {
       <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center">
         Products Categories
       </h2>
-      <p className=" max-w-7xl mx-auto text-black mb-6 md:mb-16 text-center text-sm md:text-base">
+      <p className=" max-w-7xl mx-auto text-black mb-6 md:mb-10 text-center text-sm md:text-base">
         Trusted Boiler Systems for Every Application – Built to Last, Designed
         to Perform
       </p>
       {/* Swiper Component Container */}
 
-      <div className="w-full h-[60vh] max-w-7xl relative mb-0 md:mb-6">
+      <div className="w-full h-[70vh] max-w-7xl relative mb-0 md:mb-6">
         <Swiper
           modules={[Navigation]}
           loop={true}
