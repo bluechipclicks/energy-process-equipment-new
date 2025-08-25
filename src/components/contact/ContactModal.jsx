@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { IoSendSharp, IoClose } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 // --- Contact Form Component ---
 // Handles the form's state, validation, and submission logic.
@@ -71,6 +72,7 @@ const ContactForm = ({ setIsModalOpen }) => {
       });
       setErrors({});
       setIsModalOpen(false);
+      toast.success("Thank you, our team will reach you shortly")
     }
   };
 

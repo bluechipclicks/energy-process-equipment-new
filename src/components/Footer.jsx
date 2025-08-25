@@ -89,22 +89,22 @@ const Footer = () => {
 
               <ul className="space-y-3">
                 <li>
-                  <Link href="#" className="text-white transition-colors">
+                  <Link href="/product/ibr-boiler" className="text-white transition-colors">
                     IBR Boiler
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white transition-colors">
+                  <Link href="/product/small-industrial-boiler-sib" className="text-white transition-colors">
                     Small Industrial Boiler [SIB]
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white transition-colors">
+                  <Link href="/thermic-fluid-heaters-thermopack" className="text-white transition-colors">
                    Thermic Fluid Heaters [Thermopack]
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white transition-colors">
+                  <Link href="/hot-air-generators" className="text-white transition-colors">
                     Hot Air Generators
                   </Link>
                 </li>

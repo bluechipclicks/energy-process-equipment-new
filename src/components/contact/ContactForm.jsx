@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { IoSendSharp } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +49,6 @@ const ContactForm = () => {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 2000));
       setIsSubmitting(false);
-      setSubmissionMessage("Form submitted successfully!");
       console.log("Form data submitted:", formData);
       setFormData({
         name: "",
@@ -58,6 +58,7 @@ const ContactForm = () => {
         message: "",
       });
       setErrors({});
+      toast.success("Thank you, our team will reach you shortly")
     }
   };
 
@@ -195,11 +196,7 @@ const ContactForm = () => {
             </button>
           </div>
         </form>
-        {submissionMessage && (
-          <p className="mt-4 text-sm text-center text-green-600">
-            {submissionMessage}
-          </p>
-        )}
+      
       </div>
     </div>
   );

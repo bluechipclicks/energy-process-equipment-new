@@ -57,7 +57,7 @@ const NavBar = () => {
 
   return (
     <header
-      className={`w-full py-5 fixed z-30 transition-colors duration-300 ${
+      className={`w-full py-3 md:py-5 fixed z-30 transition-colors duration-300 ${
         hasScrolled ? "bg-white shadow-sm" : "bg-transparent"
       }`}
     >
@@ -70,7 +70,7 @@ const NavBar = () => {
               alt="Energy Process Equipments (EPE)"
               height={120}
               width={360}
-              className="h-10 md:h-12 w-auto"
+              className="h-8 md:h-12 w-auto"
             />
           </Link>
         </div>

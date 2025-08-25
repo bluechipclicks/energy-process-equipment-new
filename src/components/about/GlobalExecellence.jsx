@@ -1,11 +1,11 @@
+"use client"
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
 import { HiArrowSmRight } from "react-icons/hi";
-import { PiProjectorScreenChart } from "react-icons/pi";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { BiCheckShield } from "react-icons/bi";
-
-import { FaBuilding, FaCheckCircle, FaUsers, FaHeadset } from "react-icons/fa";
+import { FaBuilding, FaUsers } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const stats = [
   {
@@ -38,7 +38,6 @@ const stats = [
   },
 ];
 
-// Updated features based on EPE's strengths
 const features = [
   { text: "Manufacturing of Reliable & Long-Life Products" },
   { text: "Diverse Product Range Including IBR & Thermal Systems" },
@@ -46,36 +45,65 @@ const features = [
   { text: "Efficient and Effective After-Sales Service" },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
 const GlobalExecellence = () => {
   return (
     <>
-      <div className="bg-black py-20   px-6 lg:px-8 ">
+      <motion.div
+        className="bg-black py-20 px-6 lg:px-8"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8">
           {stats.map((stat, index) => (
-            <div
+            <motion.div
               key={stat.label}
               className={`text-center flex items-center gap-4 md:justify-center px-4 ${
                 index < stats.length - 1
                   ? "md:border-r md:border-gray-200/80"
                   : ""
               }`}
+              variants={itemVariants}
             >
               <div>{stat.icon}</div>
               <div>
                 <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-left">
                   {stat.value}
                 </p>
-                <p className="text-white mt-2 tracking-widest text-sm md:text-base">{stat.label}</p>
+                <p className="text-white mt-2 tracking-widest text-sm md:text-base">
+                  {stat.label}
+                </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
-      <section className="bg-white">
+      </motion.div>
+      <motion.section
+        className="bg-white"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={containerVariants}
+      >
         <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-12 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Text Content Section - Updated with EPE's information */}
-            <div className="space-y-6">
+            <motion.div className="space-y-6" variants={itemVariants}>
               <h2 className="text-3xl md:text-4xl font-semibold mb-4 ">
                 Leading Boiler Manufacturing For Over 15 Years
               </h2>
@@ -105,9 +133,8 @@ const GlobalExecellence = () => {
                   <HiArrowSmRight className="ml-2" size={24} />
                 </button>
               </div>
-            </div>
-            {/* Image Collage Section - alt text updated for relevance */}
-            <div className="relative ">
+            </motion.div>
+            <motion.div className="relative" variants={itemVariants}>
               <Image
                 src="/assets/about/global-excellence.webp"
                 alt="Expert engineer at Energy Process Equipments manufacturing facility"
@@ -115,11 +142,10 @@ const GlobalExecellence = () => {
                 height={500}
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
-      {/* Stats Section - Updated with EPE's stats */}
+      </motion.section>
     </>
   );
 };

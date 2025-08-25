@@ -1,6 +1,7 @@
 // components/StatsSection.js
-
+"use client"
 import React from 'react';
+import { motion } from 'framer-motion';
 
 // You can import the stats data from another file or define it here
 const stats = [
@@ -35,12 +36,43 @@ const stats = [
 ];
 
 const StatsSection = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Time delay between each child animation
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <section className="bg-white py-16 sm:py-20">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      variants={containerVariants}
+      viewport={{ once: true }}
+      className="bg-white py-16 sm:py-20"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg text-center shadow-md border-b-4 border-b-[#DC2621] border-t border-t-gray-200/40">
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              className="bg-white p-8 rounded-lg text-center shadow-md border-b-4 border-b-[#DC2621] border-t border-t-gray-200/40"
+            >
               <p className="text-3xl md:text-4xl  font-bold text-[#DC2621]">
                 {stat.value}
               </p>
@@ -52,11 +84,11 @@ const StatsSection = () => {
               <p className="mt-3 text-sm ">
                 {stat.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -22,7 +22,7 @@ const ProductPage = async ({ params }) => {
   }
 
   return (
-    <div className=" min-h-screen">
+    <div className="">
       <div
         className="h-[400px] md:h-[650px] bg-black/80 bg-cover bg-center"
         style={{ backgroundImage: "url(/assets/contact-us.webp)" }}

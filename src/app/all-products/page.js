@@ -1,20 +1,22 @@
 import React from "react";
 import { productCategories } from "@/app/data/products";
 import ProductCategories from "@/components/productCategory/ProductCategories";
+import ContactForm from "@/components/contact/ContactForm";
 
 const page = () => {
   return (
     <>
-     <div
-          className="h-[400px] md:h-[650px] bg-black/80 bg-cover bg-center"
-          style={{ backgroundImage: "url(/assets/contact-us.webp)" }}
-        >
-          <div className="flex w-full justify-center  pt-72 ">
-         <h1 className="text-9xl text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20 font-bold">OUR PRODUCTS</h1>
-          </div>
+      <div
+        className="h-[400px] md:h-[650px] bg-black/80 bg-cover bg-center"
+        style={{ backgroundImage: "url(/assets/contact-us.webp)" }}
+      >
+        <div className="flex w-full justify-center pt-32 md:pt-72 ">
+          <h1 className="text-5xl md:text-7xl lg:text-9xl text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20 font-bold">
+            OUR PRODUCTS
+          </h1>
         </div>
+      </div>
       <div className="container max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-20">
-       
         {productCategories?.map((productCategory, categoryIndex) => (
           <div key={categoryIndex} className="text-center mb-6 md:mb-12">
             <h1 className="text-3xl md:text-7xl font-bold text-black">
@@ -33,6 +35,7 @@ const page = () => {
           </div>
         ))}
       </div>
+      <ContactForm/>
     </>
   );
 };
