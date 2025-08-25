@@ -13,10 +13,10 @@ export default function BackgroundVideoSection() {
 
       {/* Centered Text Content */}
       <div className="relative z-20 h-full  px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <h1 className="text-white text-3xl md:text-6xl font-semibold  mt-32 md:mt-44 mb-2 md:mb-6">
+        <h1 className="text-white text-3xl md:text-6xl font-semibold  mt-28 md:mt-44 mb-2 md:mb-6">
           Engineering Boilers With Excellence
         </h1>
-        <p className="text-white md:text-2xl max-w-3xl mx-auto text-center mb-4 md:mb-8">
+        <p className="text-white text-sm md:text-2xl max-w-3xl mx-auto text-center mb-6 md:mb-8">
           Delivering innovative, reliable, and long-lasting boiler solutions
           backed by expertise, dedication, and trusted service.
         </p>

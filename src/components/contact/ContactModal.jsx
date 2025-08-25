@@ -76,12 +76,15 @@ const ContactForm = ({ setIsModalOpen }) => {
 
   return (
     <div className="p-8">
-      <div className="w-full max-w-7xl mx-auto space-y-6 rounded-lg">
+      <div className="w-full max-w-7xl mx-auto space-y-4 md:space-y-6 rounded-lg">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight md:block hidden">
             Connect With Boiler Experts
           </h2>
-          <p className="mt-4 text-sm md:text-base text-gray-600">
+           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight block md:hidden">
+            Contact Us
+          </h2>
+          <p className="mt-4 text-sm md:text-base text-gray-600 md:block hidden">
             Reach our team for reliable, efficient, and innovative boiler
             solutions anytime.
           </p>
@@ -103,7 +106,7 @@ const ContactForm = ({ setIsModalOpen }) => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
+                className={`w-full px-3 py-1 md:py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
                   errors.name ? "border-red-500" : "border-gray-300"
                 }`}
               />
@@ -126,7 +129,7 @@ const ContactForm = ({ setIsModalOpen }) => {
                 name="number"
                 value={formData.number}
                 onChange={handleChange}
-                className={`w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
+                className={`w-full px-3 py-1 md:py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
                   errors.number ? "border-red-500" : "border-gray-300"
                 }`}
               />
@@ -151,7 +154,7 @@ const ContactForm = ({ setIsModalOpen }) => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
+                className={`w-full px-3 py-1 md:py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
                   errors.email ? "border-red-500" : "border-gray-300"
                 }`}
               />
@@ -174,7 +177,7 @@ const ContactForm = ({ setIsModalOpen }) => {
                 name="companyName"
                 value={formData.companyName}
                 onChange={handleChange}
-                className={`w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
+                className={`w-full px-3 py-1 md:py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
                   errors.companyName ? "border-red-500" : "border-gray-300"
                 }`}
               />
@@ -197,10 +200,10 @@ const ContactForm = ({ setIsModalOpen }) => {
             <textarea
               id="message"
               name="message"
-              rows="4"
+              rows="3"
               value={formData.message}
               onChange={handleChange}
-              className={`w-full px-3 py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
+              className={`w-full px-3 py-1 md:py-2 mt-1 border rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm ${
                 errors.message ? "border-red-500" : "border-gray-300"
               }`}
             ></textarea>
@@ -210,11 +213,11 @@ const ContactForm = ({ setIsModalOpen }) => {
           </div>
 
           {/* Submit Button */}
-          <div className="flex justify-center pt-4">
+          <div className="flex justify-center md:pt-4">
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-fit flex items-center gap-4 text-lg group py-2 px-8 border border-[#DC2621] text-[#DC2621] rounded transition-colors hover:bg-[#DC2621] hover:text-white disabled:bg-gray-400 disabled:border-gray-400 disabled:cursor-not-allowed"
+              className="w-fit flex items-center gap-4 text-sm md:text-lg group py-2 px-8 border border-[#DC2621] text-[#DC2621] rounded transition-colors hover:bg-[#DC2621] hover:text-white disabled:bg-gray-400 disabled:border-gray-400 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "Submitting..." : "Submit"}
               <IoSendSharp className="text-[#DC2621] group-hover:text-white" />
@@ -223,7 +226,7 @@ const ContactForm = ({ setIsModalOpen }) => {
         </form>
 
         {submissionMessage && (
-          <p className="mt-4 text-sm text-center text-green-600">
+          <p className="md:mt-4 text-sm text-center text-green-600">
             {submissionMessage}
           </p>
         )}
@@ -249,7 +252,7 @@ const ContactModal = ({ isModalOpen, setIsModalOpen }) => {
               className="absolute top-4 right-4 text-gray-500 transition-transform hover:text-gray-800 hover:scale-110"
               aria-label="Close modal"
             >
-              <IoClose size={28} />
+              <IoClose className="size-24 md:size-28" />
             </button>
             <ContactForm setIsModalOpen={setIsModalOpen} />
           </div>

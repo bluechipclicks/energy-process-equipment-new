@@ -67,7 +67,7 @@ const ProductSlider = () => {
       </p>
       {/* Swiper Component Container */}
 
-      <div className="w-full h-[70vh] max-w-7xl relative mb-0 md:mb-6">
+      <div className="w-full h-[50vh] md:h-[70vh] max-w-7xl relative mb-0 md:mb-6">
         <Swiper
           modules={[Navigation]}
           loop={true}
