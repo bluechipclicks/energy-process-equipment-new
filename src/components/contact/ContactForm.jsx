@@ -64,11 +64,11 @@ const ContactForm = () => {
 
   return (
     <div className="pb-12 md:pb-20">
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 space-y-6  rounded-lg">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 md:space-y-6  rounded-lg">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight text-center">
           Connect With Boiler Experts
         </h2>
-        <p className="mt-4 text-sm md:text-base text-gray-600 text-center mb-12">
+        <p className="mt-2 md:mt-4 text-sm md:text-base text-gray-600 text-center mb-6 md:mb-12">
           Reach our team for reliable, efficient, and innovative boiler
           solutions anytime.
         </p>

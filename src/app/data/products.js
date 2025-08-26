@@ -486,7 +486,9 @@ export const otherProducts = [
     productData: [
       {
         imgSrc: "/assets/products/dowtherm-evaporator.webp",
-
+        title: "Dowtherm Evaporator [Reboiler]",
+        productDescription:
+          "Efficient dowtherm evaporators designed for heating, evaporation, and energy-efficient reboiling processes.",
         featuresData: [
           "High heat transfer efficiency",
           "Robust and durable construction",
@@ -519,7 +521,6 @@ export const otherProducts = [
           "Easy installation",
           "Corrosion resistance",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/broze-globe-valve-fe.webp",
@@ -533,7 +534,6 @@ export const otherProducts = [
           "High temperature resistance",
           "Durable body construction",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/y-type-strainer-fe.webp",
@@ -547,7 +547,6 @@ export const otherProducts = [
           "Durable mesh screen",
           "Easy cleaning process",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/non-return-valve.webp",
@@ -561,7 +560,6 @@ export const otherProducts = [
           "Compact design",
           "Easy to install",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/feed-check-valve.webp",
@@ -575,7 +573,6 @@ export const otherProducts = [
           "Handles high pressure",
           "Long service life",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/cs-safety-relief-valve.webp",
@@ -589,7 +586,6 @@ export const otherProducts = [
           "Prevents scale buildup",
           "Low maintenance",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/bronze-thermodynamic-steam-trap.webp",
@@ -603,7 +599,6 @@ export const otherProducts = [
           "Long-lasting design",
           "Easy installation",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/cs-safety-relief-valve.webp",
@@ -617,7 +612,6 @@ export const otherProducts = [
           "Easy maintenance",
           "Protects equipment safety",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/steam-stop-globe-valve.webp",
@@ -631,7 +625,6 @@ export const otherProducts = [
           "Heat resistant",
           "Easy operation",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/bronze-water-level-glass-coke-set.webp",
@@ -644,7 +637,6 @@ export const otherProducts = [
           "Easy to replace",
           "Reliable performance",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/bronze-fusible-plug.webp",
@@ -658,7 +650,6 @@ export const otherProducts = [
           "Ensures boiler safety",
           "Reliable performance",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/ibr-mobery-dual-control-switch.webp",
@@ -672,7 +663,6 @@ export const otherProducts = [
           "Long life operation",
           "Reliable performance",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/ss-float-for-ibr-mobery-switch.webp",
@@ -686,7 +676,6 @@ export const otherProducts = [
           "Robust SS material",
           "Reliable performance",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/air-break-switch.webp",
@@ -700,7 +689,6 @@ export const otherProducts = [
           "Easy to operate",
           "Compact design",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/heavy-duty-glass-tube.webp",
@@ -714,7 +702,6 @@ export const otherProducts = [
           "Easy installation",
           "Safe operation",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/graphite-sleeve.webp",
@@ -728,7 +715,6 @@ export const otherProducts = [
           "Easy replacement",
           "Reliable fitting",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/ss-vertical-water-feed-pump.webp",
@@ -742,7 +728,6 @@ export const otherProducts = [
           "Durable and reliable",
           "Low maintenance",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/danfos-pressure-switch.webp",
@@ -756,7 +741,6 @@ export const otherProducts = [
           "Compact design",
           "Ensures safety",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/heavy-duty-rubber-cone.webp",
@@ -770,7 +754,6 @@ export const otherProducts = [
           "Easy fitting",
           "Reliable sealing",
         ],
-      
       },
       {
         imgSrc: "/assets/boiler-spares/oil-spray-nozzle.webp",
@@ -784,7 +767,6 @@ export const otherProducts = [
           "Reduces fuel consumption",
           "Easy to maintain",
         ],
-      
       },
     ],
   },

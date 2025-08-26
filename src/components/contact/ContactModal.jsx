@@ -78,7 +78,7 @@ const ContactForm = ({ setIsModalOpen }) => {
 
   return (
     <div className="p-8">
-      <div className="w-full max-w-7xl mx-auto space-y-4 md:space-y-6 rounded-lg">
+      <div className="w-full max-w-7xl mx-auto space-y-2 md:space-y-6 rounded-lg">
         <div className="text-center">
           <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight md:block hidden">
             Connect With Boiler Experts
@@ -92,7 +92,7 @@ const ContactForm = ({ setIsModalOpen }) => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+        <form onSubmit={handleSubmit} className="space-y-2 md:space-y-6" noValidate>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
             {/* Name Field */}
             <div>
@@ -254,7 +254,7 @@ const ContactModal = ({ isModalOpen, setIsModalOpen }) => {
               className="absolute top-4 right-4 text-gray-500 transition-transform hover:text-gray-800 hover:scale-110"
               aria-label="Close modal"
             >
-              <IoClose className="size-24 md:size-28" />
+              <IoClose className="size-6 md:size-28" />
             </button>
             <ContactForm setIsModalOpen={setIsModalOpen} />
           </div>

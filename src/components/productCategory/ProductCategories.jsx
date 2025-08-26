@@ -6,29 +6,29 @@ import { TbDownload } from "react-icons/tb";
 const ProductCard = ({ productData, index }) => {
   const isEven = index % 2 === 0 ? true : false;
   // Determine the order of columns based on the isEven prop
-  const imageOrderClass = isEven ? "lg:order-last" : "";
-  const contentOrderClass = isEven ? "lg:order-first" : "";
+  const imageOrderClass = isEven ? "md:order-last" : "";
+  const contentOrderClass = isEven ? "md:order-first" : "";
 
   // Determine the position of the background overlay
   const overlayPositionClass = isEven
-    ? "lg:left-0 lg:right-[24%]"
-    : "lg:left-[30%] lg:right-0";
+    ? "md:left-0 md:right-[24%]"
+    : "md:left-[30%] md:right-0";
 
   return (
     // The main container with group utility for hover effects
     <>
-      <div className=" pb-0 md:pb-20">
-        <div className="group relative mb-8 overflow-hidden md:rounded-[50px] ">
+      <div className=" pb-12 md:pb-20">
+        <div className="group relative overflow-hidden md:rounded-[50px] bg-gray-100/40 md:bg-transparent px-6 md:px-0 pt-6 md:pt-0 rounded-3xl ">
           {/* Background overlay that appears on hover */}
           <div
-            className={`absolute top-0 bottom-0 h-full bg-gray-100/80 rounded-[50px] z-0 ${overlayPositionClass}`}
+            className={`absolute top-0 bottom-0 h-full  bg-gray-100/80 rounded-[50px] z-0 ${overlayPositionClass}`}
           ></div>
           <div
             className={`absolute top-0 bottom-0 h-full bg-gray-200/80 rounded-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 ${overlayPositionClass}`}
           ></div>
 
           {/* Grid container for the two-column layout */}
-          <div className="relative grid grid-cols-1 lg:grid-cols-2">
+          <div className="relative grid grid-cols-1 md:grid-cols-2">
             {/* Image Column */}
             <div className={`pr-0 flex justify-center ${imageOrderClass}`}>
               <div className="transition-transform duration-300 group-hover:scale-90">
@@ -79,7 +79,7 @@ const ProductCard = ({ productData, index }) => {
                     <a
                       href={productData.brochure} // The path to your brochure in the public folder
                       download={productData.brochure} // The desired filename for the download
-                      className="tag gap-4 py-2 px-8 border hover:border-gray-300/60 w-fit flex items-center bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors"
+                      className="tag gap-4 py-2 px-8 border hover:border-gray-300/60 w-fit mb-6 flex items-center bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors"
                     >
                        <TbDownload className="animate-bounce" /> Download Brochure
                     </a>
@@ -90,7 +90,7 @@ const ProductCard = ({ productData, index }) => {
           </div>
         </div>
         {productData?.tableData && (
-          <div className=" md:px-12 mb-6">
+          <div className=" md:px-12 my-6">
             <h3 className=" font-bold  md:text-2xl mb-6 text-left">
               Technical Data of {productData.title}
             </h3>

@@ -16,9 +16,9 @@ const page = () => {
           </h1>
         </div>
       </div>
-      <div className="container max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-20">
+      <div className="container max-w-7xl mx-auto px-6 md:px-8 ">
         {productCategories?.map((productCategory, categoryIndex) => (
-          <div key={categoryIndex} className="text-center mb-6 md:mb-12">
+          <div key={categoryIndex} className="text-center ">
             <h1 className="text-3xl md:text-7xl font-bold text-black">
               {productCategory.label}
             </h1>

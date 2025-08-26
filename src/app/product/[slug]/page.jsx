@@ -24,10 +24,10 @@ const ProductPage = async ({ params }) => {
   return (
     <div className="">
       <div
-        className="h-[400px] md:h-[650px] bg-black/80 bg-cover bg-center"
+        className="h-[400px] md:h-[650px] bg-black/80 bg-cover bg-center flex  items-center text-center w-full justify-center "
         style={{ backgroundImage: "url(/assets/contact-us.webp)" }}
       >
-        <div className="flex flex-col items-center text-center w-full justify-center  pt-32 md:pt-44 ">
+        <div className="flex flex-col items-center text-center w-full justify-center  ">
           <h1 className="text-5xl md:text-7xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40 font-bold max-w-7xl mx-auto mb-4 md:mb-6">
             {product.label}
           </h1>
