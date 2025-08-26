@@ -5,7 +5,7 @@ export default function BackgroundVideoSection() {
   return (
     <section
       className="relative h-screen w-full overflow-hidden  bg-cover bg-center"
-      style={{ backgroundImage: "url(/assets/home-bg.png)" }}
+      style={{ backgroundImage: "url(/assets/home-bg.webp)" }}
     >
       {/* Background Video */}
 

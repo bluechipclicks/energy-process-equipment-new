@@ -118,7 +118,10 @@ const ProductSlider = () => {
 
       {/* Call-to-Action Buttons */}
       <div className=" z-20 flex items-center gap-4">
-        <Link href={"/all-products"} className=" py-3 px-8   font-medium border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors  duration-300 md:text-base text-sm">
+        <Link
+          href={"/all-products"}
+          className=" py-3 px-8   font-medium border hover:border-gray-300/60 bg-transparent border-[#DC2621] text-[#DC2621] hover:text-white rounded hover:bg-[#DC2621] transition-colors  duration-300 md:text-base text-sm"
+        >
           View All Products
         </Link>
       </div>
@@ -126,11 +129,17 @@ const ProductSlider = () => {
       {/* Custom Navigation Buttons */}
       <div className="absolute top-1/2 -translate-y-1/2 right-4 md:right-8 lg:right-12 z-20 flex flex-col gap-3">
         {/* Next Button */}
-        <button className="swiper-button-next-custom cursor-pointer border border-gray-200/80 bg-[#DC2621] text-white rounded-full w-11 h-11 flex items-center justify-center shadow-md hover:bg-black transition-colors">
+        <button
+          className="swiper-button-next-custom cursor-pointer border border-gray-200/80 bg-[#DC2621] text-white rounded-full w-11 h-11 flex items-center justify-center shadow-md hover:bg-black transition-colors"
+          aria-label="Next slide"
+        >
           <BsArrowRight className="text-xl" />
         </button>
-        {/* Previous Button */}
-        <button className="swiper-button-prev-custom cursor-pointer bg-[#DC2621] text-white rounded-full border border-gray-200/80 w-11 h-11 flex items-center justify-center shadow-md hover:bg-black transition-colors">
+
+        <button
+          className="swiper-button-prev-custom cursor-pointer bg-[#DC2621] text-white rounded-full border border-gray-200/80 w-11 h-11 flex items-center justify-center shadow-md hover:bg-black transition-colors"
+          aria-label="Previous slide"
+        >
           <BsArrowLeft className="text-xl" />
         </button>
       </div>

@@ -100,9 +100,9 @@ const IndustryWeServe = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                   <div className="lg:col-span-5 flex flex-col justify-between p-6 md:p-20">
                     <div>
-                      <h5 className="text-3xl md:text-4xl font-bold mb-4 hover:text-[#DC2621] transition-colors">
+                      <h3 className="text-3xl md:text-4xl font-bold mb-4 hover:text-[#DC2621] transition-colors">
                         {product.title}
-                      </h5>
+                      </h3>
                       <p className=" text-sm md:text-base md:leading-relaxed">
                         {product.description}
                       </p>
