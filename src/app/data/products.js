@@ -507,6 +507,8 @@ export const otherProducts = [
       "Wide range of quality boiler spare parts ensuring reliable operation and long boiler life.",
     productData: [
       {
+        imgSrc: "/assets/boiler-spares/broze-globe-valve-se.webp",
+
         title: "Bronze Globe Valve S/E",
         productDescription:
           "Durable bronze valve suitable for steam and water applications.",
@@ -517,9 +519,10 @@ export const otherProducts = [
           "Easy installation",
           "Corrosion resistance",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/broze-globe-valve-fe.webp",
         title: "Bronze Globe Valves F/E",
         productDescription:
           "Flanged end globe valves for industrial steam systems.",
@@ -530,9 +533,10 @@ export const otherProducts = [
           "High temperature resistance",
           "Durable body construction",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/y-type-strainer-fe.webp",
         title: "'Y' Type Strainer F/E",
         productDescription:
           "Strainer for removing impurities and ensuring clean fluid flow.",
@@ -543,9 +547,10 @@ export const otherProducts = [
           "Durable mesh screen",
           "Easy cleaning process",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/non-return-valve.webp",
         title: "Non Return Valve",
         productDescription:
           "Reliable NRV to prevent reverse flow in piping systems.",
@@ -556,9 +561,10 @@ export const otherProducts = [
           "Compact design",
           "Easy to install",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/feed-check-valve.webp",
         title: "Acc. Feed Check Valve",
         productDescription:
           "Special valve for boiler feed regulation with accuracy.",
@@ -569,9 +575,10 @@ export const otherProducts = [
           "Handles high pressure",
           "Long service life",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/cs-safety-relief-valve.webp",
         title: "C.S. Blow Down Valve",
         productDescription:
           "Carbon steel valve for efficient boiler blowdown operations.",
@@ -582,9 +589,10 @@ export const otherProducts = [
           "Prevents scale buildup",
           "Low maintenance",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/bronze-thermodynamic-steam-trap.webp",
         title: "Bronze Thermodynamic Steam Trap",
         productDescription:
           "Steam trap designed for automatic discharge of condensate.",
@@ -595,9 +603,10 @@ export const otherProducts = [
           "Long-lasting design",
           "Easy installation",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/cs-safety-relief-valve.webp",
         title: "C.S. Safety Relief Valve",
         productDescription:
           "Safety valve for pressure relief in steam systems.",
@@ -608,9 +617,10 @@ export const otherProducts = [
           "Easy maintenance",
           "Protects equipment safety",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/steam-stop-globe-valve.webp",
         title: "Steam Stop Globe Valve",
         productDescription:
           "Valve used to regulate or stop steam flow in pipelines.",
@@ -621,9 +631,10 @@ export const otherProducts = [
           "Heat resistant",
           "Easy operation",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/bronze-water-level-glass-coke-set.webp",
         title: "Bronze Water Level Glass Coke Set",
         productDescription: "Set for monitoring boiler water level accurately.",
         featuresData: [
@@ -633,9 +644,10 @@ export const otherProducts = [
           "Easy to replace",
           "Reliable performance",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/bronze-fusible-plug.webp",
         title: "Bronze Fusible Plug (2 Pcs. Design)",
         productDescription:
           "Safety fusible plug for boiler overheat protection.",
@@ -646,9 +658,10 @@ export const otherProducts = [
           "Ensures boiler safety",
           "Reliable performance",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/ibr-mobery-dual-control-switch.webp",
         title: "IBR Mobery Dual Control Switch",
         productDescription:
           "Dual control switch for automatic boiler operation monitoring.",
@@ -659,9 +672,10 @@ export const otherProducts = [
           "Long life operation",
           "Reliable performance",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/ss-float-for-ibr-mobery-switch.webp",
         title: "S.S. Float for IBR Mobery Switch",
         productDescription:
           "Stainless steel float designed for Mobery switches.",
@@ -672,9 +686,10 @@ export const otherProducts = [
           "Robust SS material",
           "Reliable performance",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/air-break-switch.webp",
         title: "Air Break Switch",
         productDescription:
           "Switch designed for safe isolation of electrical circuits.",
@@ -685,9 +700,10 @@ export const otherProducts = [
           "Easy to operate",
           "Compact design",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/heavy-duty-glass-tube.webp",
         title: "Heavy Duty Glass Tube",
         productDescription:
           "Strong glass tube for boiler water level indication.",
@@ -698,9 +714,10 @@ export const otherProducts = [
           "Easy installation",
           "Safe operation",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/graphite-sleeve.webp",
         title: "Graphite Sleeve (Gauge Glass Coke)",
         productDescription:
           "Graphite sleeve for sealing and supporting gauge glasses.",
@@ -711,9 +728,10 @@ export const otherProducts = [
           "Easy replacement",
           "Reliable fitting",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/ss-vertical-water-feed-pump.webp",
         title: "S. S. Vertical Water Feed Pump",
         productDescription:
           "Stainless steel water pump for efficient feed to boilers.",
@@ -724,9 +742,10 @@ export const otherProducts = [
           "Durable and reliable",
           "Low maintenance",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/danfos-pressure-switch.webp",
         title: "'Danfos' Pressure Switch",
         productDescription:
           "Pressure switch for controlling and protecting boiler systems.",
@@ -737,9 +756,10 @@ export const otherProducts = [
           "Compact design",
           "Ensures safety",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/heavy-duty-rubber-cone.webp",
         title: "Heavy Duty Rubber Cone",
         productDescription:
           "Robust rubber cone for industrial boiler applications.",
@@ -750,9 +770,10 @@ export const otherProducts = [
           "Easy fitting",
           "Reliable sealing",
         ],
-        brochure: "/",
+      
       },
       {
+        imgSrc: "/assets/boiler-spares/oil-spray-nozzle.webp",
         title: "Oil Spray Nozzle",
         productDescription:
           "Efficient nozzle designed for proper fuel oil atomization in burners.",
@@ -763,7 +784,7 @@ export const otherProducts = [
           "Reduces fuel consumption",
           "Easy to maintain",
         ],
-        brochure: "/",
+      
       },
     ],
   },
