@@ -1,12 +1,13 @@
 deployment:
   tasks:
+    # Set paths
     - export DEPLOYPATH=/home3/blueceko/stellalifesciences.com
     - export REPOPATH=/home3/blueceko/repositories/stellalifesciences.com
-    # Go to repository folder
-    - cd $REPOPATH
-    # Install dependencies
+
+    # Sync source code (so package.json, server.js, next.config.js exist in DEPLOYPATH)
+    - rsync -a --delete $REPOPATH/ $DEPLOYPATH/
+
+    # Go to deploy path and install dependencies
+    - cd $DEPLOYPATH
     - npm install
-    # Build Next.js for production
     - npm run build
-    # Copy .next and static files to deployment path
-    - rsync -a --delete .next public package.json $DEPLOYPATH
