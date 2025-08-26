@@ -1,0 +1,16 @@
+deployment:
+  tasks:
+    # Define paths
+    - export DEPLOYPATH=/home3/blueceko/stellalifesciences.com
+    - export REPOPATH=/home3/blueceko/repositories/energy-process-equipment-new
+
+    # Go to repo folder
+    - cd $REPOPATH
+
+    # Install dependencies and build/export
+    - npm install
+    - npm run build
+    - npm run export
+
+    # Copy exported static site to website root
+    - /bin/rsync -av --delete $REPOPATH/out/ $DEPLOYPATH/
